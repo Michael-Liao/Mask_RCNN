@@ -164,7 +164,8 @@ Contributions to this repository are welcome. Examples of things you can contrib
 You can also [join our team](https://matterport.com/careers/) and help us build even more projects like this one.
 
 ## Requirements
-Python 3.4, TensorFlow 1.3, Keras 2.0.8 and other common packages listed in `requirements.txt`.
+Python 3.4, TensorFlow 1.3, Keras 2.0.8 and other common packages listed in `requirements.txt`.  
+pinned requirements of this repo is listed in `Pipfile.lock`
 
 ### MS COCO Requirements:
 To train or test on MS COCO, you'll also need:
@@ -179,12 +180,14 @@ If you use Docker, the code has been verified to work on
 
 
 ## Installation
-1. Install dependencies
-   ```bash
-   pip3 install -r requirements.txt
-   ```
-2. Clone this repository
-3. Run setup from the repository root directory
+**NOTE:** this repository is managed by `pipenv`, make sure you have pipenv installed on your system
+
+1. Clone this repository
+2. Install dependencies
+    ```bash
+    pipenv --three installl .
+    ```
+3. (Optional) Run setup from the repository root directory
     ```bash
     python3 setup.py install
     ``` 

@@ -18,7 +18,7 @@ pillow = "*"
 matplotlib = "*"
 tensorflow-gpu = "*"
 keras = "*"
-numpy = "*"
+numpy = "==1.14.5"
 
 [requires]
 python_version = "3.5"

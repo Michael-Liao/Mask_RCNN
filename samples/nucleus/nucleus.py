@@ -112,7 +112,8 @@ class NucleusConfig(Config):
 
     # Input image resizing
     # Random crops of size 512x512
-    IMAGE_RESIZE_MODE = "crop"
+    # IMAGE_RESIZE_MODE = "crop"
+    IMAGE_RESIZE_MODE = "square"
     IMAGE_MIN_DIM = 512
     IMAGE_MAX_DIM = 512
     IMAGE_MIN_SCALE = 2.0
@@ -147,10 +148,12 @@ class NucleusConfig(Config):
     TRAIN_ROIS_PER_IMAGE = 128
 
     # Maximum number of ground truth instances to use in one image
-    MAX_GT_INSTANCES = 200
+    # MAX_GT_INSTANCES = 200
+    MAX_GT_INSTANCES = 1
 
     # Max number of final detections per image
-    DETECTION_MAX_INSTANCES = 400
+    # DETECTION_MAX_INSTANCES = 400
+    DETECTION_MAX_INSTANCES = 1
 
 
 class NucleusInferenceConfig(NucleusConfig):
